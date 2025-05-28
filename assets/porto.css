@@ -1,0 +1,295 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    font-family: "Poppins", sans-serif;
+    overflow-x: hidden;
+    font-weight: 400;
+
+}
+
+.nav{
+    width: 100vw;
+    height: 50px;
+    background: rgb(74, 69, 69);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.logo{
+    color: antiquewhite;
+}
+
+.navitem{
+    color: #fff;
+    text-decoration: none;
+}
+
+.navitem:hover{
+    font-weight: 600;
+    background-color: black;
+}
+
+ul{
+    display: flex;
+    gap: 30px;
+    list-style: none;
+}
+
+li{
+    color: antiquewhite;
+}
+
+
+.container{
+    width: 80%;
+    background-color: rgb(253, 253, 253);
+    margin-top: 20px;
+    border-radius: 8px;
+}
+
+.textgray{
+    color: gray;
+    font-weight: 500;
+}
+
+.content{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+}
+
+.hero{
+    width: 100dvw;
+    height: 80dvh;
+    display: flex;
+    justify-content: center;
+}
+
+.imageprofile img{
+    width: 150px;
+    border-radius: 100%;
+    box-shadow: 0 2px 5px black ;
+}
+
+.herotittle{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+.herotittle h1{
+    margin-bottom: 15px;
+}
+.buttontittle{
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+}
+.buttontittle a{
+  background-color: black;
+  padding: 7px 30px;
+  font-size: .7em;
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+  border-radius: 9px;
+}
+
+.aboutme{
+    width: 100dvw;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap-reverse;
+    background-color: #85979d;
+    padding: 40px 10px;
+    gap: 30px;
+
+}
+
+.skill-area{
+    width: 40%;
+    padding: 10px 5px;
+}
+
+.desc-area{
+    width: 40%;
+}
+
+.card-skill{
+    width: 80%;
+    display: flex;
+    gap: 40px;
+    background: #ffff;
+    border-radius: 8px;
+    padding: 30px;
+    margin: 10px;
+}
+
+.icon-skill{
+    width: 30px;
+    height: 30px;
+    background-color: rgb(115, 139, 139);
+    padding: 20px;
+    border-radius: 100%;
+    text-align: center;
+}
+
+.skilldescription{
+    font-size: 2rem;
+}
+
+.desc{
+    margin-top: 20px;
+}
+
+.textaboutme{
+    text-align: justify;
+    font-weight: 300;
+}
+
+.project-count{
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-around;
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 8px;
+}
+
+.totalproject{
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+.aboutme{
+    width: 100dvw;
+    padding: 40px 10px;
+}
+
+.gridcontainer{
+    width: 80%;
+    display: grid;
+    grid-template-columns: repeat(3, 3fr);
+    grid-gap: 20px;
+    padding: 30px;
+}
+
+.project{
+    width: 100dvw;
+    padding: 40px 10px;
+    display: flex;
+    justify-content: center;
+}
+
+.card{
+    height: 340px;
+    text-align: center;
+    border: 1px black solid;
+    padding: 10px;
+    border-radius: 8px;
+}
+
+.card:hover{
+    transform: translateY(-5px);
+    box-shadow: 0 5px 10px #2e2e2e50;
+}
+
+.gambar{
+    width: 100%;
+    height: 240px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+.cardtittle{
+    margin-top: 20px;
+}
+
+.textproject{
+    font-size: .8rem;
+    font-weight: 300;
+}
+
+.contact{
+    width: 100dvw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 10px;
+}
+
+.socialmedia{
+    margin-top: 20px;
+}
+
+.sosmed{
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 8px;
+    background: goldenrod;
+    color: white;
+    border-radius: 100%;
+}
+
+@media screen and (max-width: 768px) {
+ .nav{
+    height: auto;
+    padding: 24px 0;
+    display: flex;
+    flex-wrap: wrap;
+ }
+
+ .imageprofile img{
+    width: 100px;
+ }
+
+ .aboutme{
+    height: auto;
+    padding: 24px 0;
+    display: flex;
+    flex-direction: column-reverse;
+ }
+
+ .desc-area{
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+ }
+
+ .skilldescription{
+    font-size: 1.3rem;
+ }
+
+ .textaboutme{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+ }
+
+ .gridcontainer{
+    grid-template-columns: repeat(1, 2fr);
+ }
+
+ .sosmed{
+    width: auto;
+    height: auto;
+ }
+
+
+}
